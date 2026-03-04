@@ -9,7 +9,7 @@
 <body>
     <div class='log'>
         <h1>Login</h1>
-        <form action="ok.php" method="post"> 
+        <form action="php/Loginphp.php" method="post"> 
             <label>User</label><br>
             <input type="text" name="user" placeholder="Username" required><br><br>
             

@@ -53,6 +53,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['tarea'])) {
             </ul>
         </div>
     </div>
-    <script src="scrip.js"></script>
+    <script src="js/scrip.js"></script>
 </body>
 </html>

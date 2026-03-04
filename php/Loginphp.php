@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
         $_SESSION['user_id'] = $row['id'];
         $_SESSION['username'] = $row['username'];
         
-        header("Location: todo.php");
+        header("Location: ../todo.php");
         exit();
         
     } else {
