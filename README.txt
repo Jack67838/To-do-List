@@ -1,4 +1,5 @@
-En el http://localhost/phpmyadmin hay que crear varios bases de datos:
+Esto esta hecho con XAMPP tienes que activar mysql y apache.
+En el http://localhost/phpmyadmin hay que crear un base de dato:
 
 CREATE DATABASE IF NOT EXISTS `ToDoList`;
 USE `ToDoList`;
