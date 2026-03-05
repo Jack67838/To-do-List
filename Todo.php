@@ -16,13 +16,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['tarea'])) {
     }
 
     $texto = $_POST['text'];
-    $sql = "INSERT INTO todo (text) VALUES ('$texto')";
+    $usuario_id = $_SESSION['user_id'];
+    $sql = "INSERT INTO todo (text, usuario_id) VALUES ('$texto','$usuario_id')";
     
     if ($conn->query($sql) === TRUE) {
         $mensaje = "Save successfully";
     } else {
         $mensaje = "Error: " . $conn->error;
     }
+    
     $conn->close();
 }
 ?>
@@ -47,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['tarea'])) {
                 <button onclick="addTask()" name='tarea' type='Submit'>Add</button>
             </form>
             <ul id="list-container">
+                <?php echo $resultado;?>
                 <!--<li class="si">Task 1</li>
                 <li>Task 2</li>
                 <li>Task 3</li>-->

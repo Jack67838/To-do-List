@@ -12,7 +12,6 @@ $user = 'root';
 $pass = '';
 $conn = new mysqli($host, $user, $pass, $db);
 
-$usuario_id = $_SESSION['user_id'];
 $username = $_SESSION['username'];
 
 $sql = "SELECT created_at FROM usuarios WHERE id = ?";
